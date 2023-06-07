@@ -15,7 +15,7 @@ class Book {
 
     // here are the Class's methodes
     static removeBook = (bookId) => {
-      const books = JSON.parse(localStorage.getItem('books')) || [];
+      const books = JSON.parse(localStorage.getItem('books'));
       const filteredBooks = books.filter((book) => book.id !== bookId);
       saveBooksToLocalStorage(filteredBooks);
     }
