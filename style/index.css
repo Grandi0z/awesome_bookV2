@@ -1,0 +1,144 @@
+/* general */
+:root {
+  --white: #fff;
+  --dark: #000;
+  --whiteDec: #d9d9d9;
+}
+
+* {
+  font-family: "Pangolin", Courier, monospace;
+  box-sizing: border-box;
+}
+
+button {
+  border-bottom: 6px solid #000;
+  border-left: 3px solid #000;
+  border-right: 3px solid #000;
+}
+
+.hidden {
+  display: none;
+}
+
+/* style containers (section) */
+
+.books_list,
+.book_addForm,
+.book_contactUs {
+  height: 80vh;
+}
+
+h2[class="section_head"] {
+  text-align: center;
+}
+
+/* header style */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  border: solid var(--dark) 2px;
+  padding: 0.2rem 1.7rem;
+}
+
+header > h1 {
+  font-size: x-large;
+  margin: 0;
+}
+
+.navMenu {
+  display: flex;
+  margin: auto 0;
+  padding: 0;
+}
+
+.navMenu > li {
+  list-style: none;
+  padding: 0 0.5rem;
+}
+
+.navMenu > li[id="menu_add_book"] {
+  border-left: solid var(--dark) 1px;
+  border-right: solid var(--dark) 1px;
+}
+
+.navItem > a {
+  text-decoration: none;
+  color: var(--dark);
+}
+
+/* date */
+
+.todayDate {
+  text-align: right;
+}
+
+hr {
+  display: flex;
+  justify-content: center;
+  width: 6rem;
+  margin: 1rem auto;
+  border: 1px solid #000;
+}
+
+/* Books list */
+
+.books_list > h1 {
+  text-align: center;
+}
+
+.book_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.book_form > div {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  row-gap: 5px;
+}
+
+button[type="submit"] {
+  width: fit-content;
+  align-self: flex-end;
+  margin-left: 8rem;
+}
+
+/* table */
+
+table {
+  width: 100%;
+  margin: 1rem auto;
+  border: var(--dark) solid 1.5px;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 16px;
+}
+
+td[class="remove_btn_container"] {
+  text-align: right;
+}
+
+tr:nth-child(odd) {
+  background-color: var(--whiteDec);
+}
+
+/* section contact us */
+
+section[class="book_contactUs"] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* footer */
+
+footer {
+  border: solid black 2px;
+  padding: 0.2rem 1.7rem;
+}
