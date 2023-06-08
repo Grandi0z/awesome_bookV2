@@ -7,7 +7,7 @@ const renderBookList = (books) => {
 };
 
 const loadBooksFromLocalStorage = () => {
-  const dataSaved = localStorage.getItem('books')||[];
+  const dataSaved = localStorage.getItem('books') || [];
   if (dataSaved) {
     const books = JSON.parse(dataSaved);
     renderBookList(books);
