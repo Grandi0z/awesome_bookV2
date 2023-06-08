@@ -2,7 +2,7 @@ import { loadBooksFromLocalStorage, addClass } from './modules/functions.js';
 import { saveFormSubmit } from './modules/book.js';
 import addBookForm from './modules/variables.js';
 import createBookElement from './modules/bookView.js';
-import { DateTime } from '../node_modules/luxon/src/luxon.js';
+//import { DateTime } from '../node_modules/luxon/src/luxon.js';
 
 // event listener to the form
 addBookForm.addEventListener('submit', (e) => {
@@ -11,8 +11,8 @@ addBookForm.addEventListener('submit', (e) => {
 });
 
 // DATE
-const now = DateTime.now().toLocaleString(DateTime.DATETIME_MED);
-document.querySelector('.todayDate').innerText = now;
+// const now = DateTime.now().toLocaleString(DateTime.DATETIME_MED);
+// document.querySelector('.todayDate').innerText = now;
 
 //! Navigate Between pages
 
